@@ -1,0 +1,13 @@
+&PARAM_CHIQW
+    num_freq_grid = 1000
+    green_func_delt = 0.01
+/
+&PARAM_CALC_INT
+    calc_ifreq = 1
+    ix_intJ_min = 0
+    ix_intJ_max = 0
+    iy_intJ_min = 0
+    iy_intJ_max = 0
+    iz_intJ_min = 0
+    iz_intJ_max = 0
+/

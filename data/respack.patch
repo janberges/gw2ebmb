@@ -1,0 +1,26 @@
+diff --git a/src/chiqw/chiqw.F b/src/chiqw/chiqw.F
+index 418fb6b..3f982aa 100644
+--- a/src/chiqw/chiqw.F
++++ b/src/chiqw/chiqw.F
+@@ -1414,9 +1414,9 @@
+         dsgn=-1.0d0
+         ca1(:)=0.0d0
+         call ttrhdrn_chi0(dmna,dmnr,nkb1,nkb2,nkb3,imt1(1),
+      +                   e1_3D(1,1,1),e2_3D(1,1,1),
+-     +                   FermiEnergy,FermiEnergy,delt,dsgn,
++     +                   FermiEnergy,FermiEnergy,-delt,dsgn,
+      +                   nen,em(1),ca1(1),xow(1,1,1,1)) 
+         !--
+         xow_1D(:,:)=0.0d0 
+         do ikb3=1,nkb3
+@@ -1887,9 +1887,9 @@
+         dsgn=-1.0d0
+         ca1(:)=0.0d0
+         call ttrhdrn_chi0(dmna,dmnr,nkb1,nkb2,nkb3,imt1(1),
+      +                   e1_3D(1,1,1),e2_3D(1,1,1),
+-     +                   FermiEnergy,FermiEnergy,delt,dsgn,
++     +                   FermiEnergy,FermiEnergy,-delt,dsgn,
+      +                   nen,em(1),ca1(1),xow(1,1,1,1)) 
+         !--
+         xow_1D(:,:)=0.0d0 
+         do ikb3=1,nkb3

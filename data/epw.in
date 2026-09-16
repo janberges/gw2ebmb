@@ -1,0 +1,40 @@
+TaS2
+&INPUTEPW
+    prefix = 'Sr2RuO4'
+    outdir = 'work'
+    dvscf_dir = 'save'
+
+    wannierize = .true.
+    elph = .true.
+    use_ws = .true.
+    epwwrite = .true.
+
+    nbndsub = 3
+
+    proj(1) = 'Ru: dxz; dyz; dxy'
+
+    dis_froz_min = 10.0
+    dis_froz_max = 11.95
+
+    dis_win_min 8.8
+    dis_win_max = 12.5
+
+    num_iter = 0
+    wdata(1) = 'dis_num_iter 10000'
+
+    nk1 = 10
+    nk2 = 10
+    nk3 = 10
+
+    nq1 = 5
+    nq2 = 5
+    nq3 = 5
+
+    nkf1 = 10
+    nkf2 = 10
+    nkf3 = 10
+
+    nqf1 = 5
+    nqf2 = 5
+    nqf3 = 5
+/

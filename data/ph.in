@@ -1,0 +1,15 @@
+Sr2RuO4
+&INPUTPH
+    outdir = 'work'
+    prefix = 'Sr2RuO4'
+
+    fildyn = 'dyn'
+    fildvscf = 'dvscf'
+
+    ldisp = .true.
+    nq1 = 5
+    nq2 = 5
+    nq3 = 5
+
+    tr2_ph = 1e-21
+/
