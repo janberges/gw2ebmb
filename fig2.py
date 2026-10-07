@@ -123,8 +123,12 @@ DOS = data[:, 1:]
 for typ in results:
     print('Typ: %s' % typ)
 
-    print('Effective coupling: %g, %g, %g' % tuple(DOS[np.argmin(abs(e))]
-        * np.diag(results[typ]['lambda'])))
+    results[typ]['lambda'] += results[typ]['lambda'].T.copy()
+    results[typ]['lambda'] /= 2
+
+    print('Effective coupling: %g, %g, %g'
+        % tuple((DOS[np.argmin(abs(e))][np.newaxis]
+            * results[typ]['lambda']).sum(axis=1)))
 
     print('Effective energy: %g eV' % results[typ]['omegaLog'])
 
