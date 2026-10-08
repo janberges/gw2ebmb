@@ -5,7 +5,8 @@ reproduce the figures shown in the paper:
 
 > *Unified treatment of local dynamical interactions in correlated metals using
   Eliashberg theory* by Jan Berges, Samuel Poncé, Mario Caserta, Nicola Marzari,
-  and Tommaso Chiarotti (2026).
+  and Tommaso Chiarotti, [arXiv:2610.09656](https://arxiv.org/abs/2610.09656)
+  (2026).
 
 ## Installation
 
